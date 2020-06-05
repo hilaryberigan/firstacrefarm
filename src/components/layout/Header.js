@@ -4,7 +4,7 @@ import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
 
 const Header = () => (
-  <header className="sticky top-0 bg-white shadow hidden sm:block">
+  <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8 header-green logo-header">
       <div className="flex items-center text-2xl">
         <div className="w-20 mr-3">
@@ -15,7 +15,7 @@ const Header = () => (
       </div>
       </div>
 
-      <div className="text-xl flex mt- sm:mt-0">
+      <div className="text-xl flex mt- sm:mt-0 hidden sm:block">
         <AnchorLink offset="50" className="px-6" href="#about">
           About the Farm
         </AnchorLink>
