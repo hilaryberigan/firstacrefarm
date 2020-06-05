@@ -1,36 +1,32 @@
 import React from 'react';
+import LogoIconReverse from '../../svg/LogoIconReverse';
 
 const Footer = () => (
-  <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
-    <div className="flex -mx-3">
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
-      </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Important Links</h2>
+  <footer className="dark-green-text ">
+    <div className="flex py-10 px-10 background-green">
+      <div className="flex-1 px-auto py-3">
+        <h2 className="text-lg font-semibold">Information</h2>
+        
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
+            First Acre Farm 
+          </li>
+          <li> 
+            Your Farmer: Andy Donovan
           </li>
           <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
+            (847) 274-9497
+          </li>
+          <li>
+            andy@firstacrefarm.com
+          </li>
+          <li>
+            <a href="https://www.instagram.com/firstacrefarm/">@firstacrefarm</a>
           </li>
         </ul>
       </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Social Media</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/HuntaroSan">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
-          </li>
-        </ul>
+      <div className="w-1/5 ">
+        <LogoIconReverse />
       </div>
     </div>
   </footer>

@@ -8,19 +8,18 @@ const sizes = {
 
 const Button = ({ children, className = '', size }) => {
   return (
-    <button
+    <a href="https://www.tendfarm.com/firstacrefarm"
       type="button"
       className={`
         ${sizes[size] || sizes.default}
         ${className}
-        bg-primary
-        hover:bg-primary-darker
         rounded
         text-white
+
     `}
     >
       {children}
-    </button>
+    </a>
   );
 };
 

@@ -1,10 +1,48 @@
 @tailwind base;
 
 a {
-  @apply text-primary;
+  color: #4f703E;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
 }
 a:hover {
-  @apply text-primary-darker;
+  color: #7B946E;
+}
+
+.header-green {
+	color: #4f703E;
+	font-family: 'Sanchez', Arial, Helvetica, sans-serif;
+}
+.sub-header-white {
+	color: white;
+}
+
+
+.logo-header {
+	font-family: 'Sanchez', Arial, Helvetica, sans-serif;
+}
+
+.background-green {
+	background-color: #A9BBA3;
+}
+
+.background-white {
+	background-color: white;
+}
+
+.shop-button {
+	color: white;
+	background-color: #4f703E;
+}
+ a.shop-button:hover {
+  background-color: #3B542F;
+  color: white;
+  border-color: #4f703E;
+  border-style: solid;
+}
+
+.dark-green-text {
+	color: #3B542F;
+	font-family: "Sanchez", Arial, Helvetica, sans-serif;
 }
 
 @tailwind components;
