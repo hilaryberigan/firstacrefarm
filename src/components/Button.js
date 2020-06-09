@@ -9,7 +9,6 @@ const sizes = {
 const Button = ({ children, className = '', size }) => {
   return (
     <a href="https://www.tendfarm.com/firstacrefarm"
-      type="button"
       className={`
         ${sizes[size] || sizes.default}
         ${className}
