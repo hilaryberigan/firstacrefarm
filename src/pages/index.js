@@ -129,9 +129,10 @@ export default () => (
               </ul>
               </Card>
               <p className="mt-4 text-lg font-light text-right dark-green-text">
-                Orders must be submitted by Thurs.i at midnight.
+                Orders must be submitted by Thursday at midnight.
                 <br/> Online ordering is closed Friday - Saturday.
               </p>
+              <br/>
               <div className="text-right">
                 <Button className="text-sm shop-button">Our Online Shop</Button>
               </div>
