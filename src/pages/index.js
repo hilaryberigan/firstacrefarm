@@ -120,15 +120,18 @@ export default () => (
             <p className="mt-4 text-lg font-light text-justify dark-green-text">
               Individuals at high risk for contracting COVID-19 or those who cannot attend the Westside Farmers Market should use our online store to pre-order.  
               <br/>
-              <Card className="text-sm lg:px-5 lg:py-5 lg:ml-20 mt-4" >
+              <Card className="text-sm lg:ml-20 mt-4 p-5" >
+              <h4 className="text-xl">Options: </h4>
               <ul className="text-justify">
                 <li>Free pickup at the Saturday market. </li> 
                 <li>Free Saturday pickup at the Farm. </li>
                 <li>Saturday afternoon delivery to Twin Cities or Amery, WI area for orders over $30. </li>
-                <li>Orders must be submitted by Thursdays at midnight. </li>
               </ul>
               </Card>
-              <br/>
+              <p className="mt-4 text-lg font-light text-right dark-green-text">
+                Orders must be submitted by Thurs.i at midnight.
+                <br/> Online ordering is closed Friday - Saturday.
+              </p>
               <div className="text-right">
                 <Button className="text-sm shop-button">Our Online Shop</Button>
               </div>
@@ -157,7 +160,7 @@ export default () => (
      <div className="container mx-auto lg:px-16 items-center flex flex-col lg:flex-row my-20">
         <div className="lg:w-2/3 lg:pr-20 xl:pr-24">
             <h3 className="text-3xl font-semibold leading-tight text-right ">
-              Wholesale Inquires   
+              Wholesale Inquiries   
             </h3>
              <p className="mt-4 text-xl font-light text-right dark-green-text">
               Contact andy@firstacrefarm.com 
