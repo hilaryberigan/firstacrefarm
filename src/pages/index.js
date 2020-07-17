@@ -171,7 +171,7 @@ export default () => (
               • Onion • Garlic • Carrots • Beets • Winter Squash
               <br/>
               <br/>
-              Check out our &nbsp; 
+              Check out our&nbsp; 
               <FlyerDownloadFile className="grey underline"/> for more details.
               </p>
             <br/>
