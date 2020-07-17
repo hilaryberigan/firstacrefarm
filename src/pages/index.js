@@ -14,34 +14,34 @@ import MarketIcon from '../svg/MarketIcon';
 import SaleIcon from '../svg/SaleIcon';
 import StoreIcon from '../svg/StoreIcon';
 import BasketIcon from '../svg/BasketIcon';
+import FlyerDownloadFile from '../../static/CsaFlyer.js';
+import MainTitle from '../components/MainTitle'
 
 export default () => (
   <Layout>
-    <section className="background-green py-20">
-      <div className="mx-auto my-auto lg:flex">
-        <div className="px-10 py-20 lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none dark-green-text">
-            Fresh. Local. 
-            <br/>
-            Human Powered.
-          </h1>
-          <p className="text-xl lg:text-2xl mt-6 font-light">
-            Here at First Acre Farm, we produce a variety of seasonal vegetables, including our speciality - fresh salad greens and salad materials. 
+    <section>
+      <div className="mx-auto my-auto lg:flex background-green">
+        <div className="lg:px-10 lg:py-20 py-2 lg:text-left lg:w-1/2">
+          <MainTitle className="md:text-4xl lg:text-5xl xl:text-6xl text-xl font-bold leading-none dark-green-text text-center lg:text-left" />
+          <p className="text-xl lg:text-2xl mt-6 font-light hidden lg:block">
+            Here at First Acre Farm, we produce a variety of seasonal vegetables, including our speciality - fresh salad greens and salad ingredients. 
           </p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
         </div>
       </div>
+
     </section>
-    <section id="about" className="py-20">
+    <div className="px-4 lg:px-0">
+    <section id="about" className="lg:mt-12 mt-8">
       <div className="mx-auto my-auto lg:flex">
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 hidden lg:block">
           <AboutImage />
         </div>
-        <div className="px-10 text-center lg:text-left lg:w-1/2">
-          <h2 className="text-3xl lg:text-4xl font-semibold leading-tight dark-green-text">About the Farm</h2>
-          <p className="mt-4 text-xl font-light">
+        <div className="lg:px-10 px-5 text-center lg:text-left lg:w-1/2">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight dark-green-text">About the Farm</h2>
+          <p className="mt-4 lg:text-lg md:text-md font-light text-left">
             First Acre Farm was established in 2020 on the premise that bigger is not better.  
             By a combination of traditional farm practices and modern techniques a bountiful harvest can be had from a very small area, perhaps the very first acre.  
             By staying small, we can provide the extra attention needed to produce a variety of very high quality crops.  
@@ -57,29 +57,29 @@ export default () => (
       </div>
     </section>
     <section id="products">
-      <div className="container mx-auto text-center pb-10">
-        <h2 className="text-3xl lg:text-4xl font-semibold">Seasonal Products</h2>
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-          <div className="flex-1 px-3">
-            <Card className="mb-8 background-green">
+      <div className="container mx-auto text-center mt-8 lg:mt-12">
+        <h2 className="text-2xl lg:text-4xl font-semibold">Seasonal Products</h2>
+        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-6 lg:mt-12">
+          <div className="flex-1 px-3 mb-1">
+            <Card className="background-green">
               <p className="font-semibold text-xl">Greens</p>
-              <p className="mt-4">
+              <p className="lg:mt-4 mt-2">
                 spring mix, head lettuce, spinach, arugula, Asian greens, et cetera
               </p>
             </Card>
           </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8 background-green">
+          <div className="flex-1 px-3 mb-1">
+            <Card className="background-green">
               <p className="font-semibold text-xl">Vegetables</p>
-              <p className="mt-4">
+              <p className="lg:mt-4 mt-2">
                 tomatoes, cucumbers, onions, radishes, turnips, carrots, et cetera
               </p>
             </Card>
           </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8 background-green">
+          <div className="flex-1 px-3 mb-1">
+            <Card className="background-green">
               <p className="font-semibold text-xl">Herbs</p>
-              <p className="mt-4">
+              <p className="lg:mt-4 mt-2">
                 basil, cilantro, dill, thyme, oregano, Mexican mint, parsley, et cetera
               </p>
             </Card>
@@ -89,93 +89,104 @@ export default () => (
     </section>
 
     <section id="where">
-      <div className="container mx-auto text-center">
-      <h2 className="text-3xl lg:text-4xl font-semibold dark-green-text">Where to Find Us</h2>
-      
-      <Card className="background-green py-0 lg:px-16 mt-12 mb-20">
+      <div className="container mx-auto text-center lg:mt-12 mt-8">
+        <h2 className="text-2xl lg:text-4xl font-semibold dark-green-text">Where to Find Us</h2>
+        <div className="flex flex-col sm:flex-row lg:mt-12 mt-4 grid grid-cols-2 gap-4">
+          <div className="flex-1 px-1 lg:px-3 row-span-1 col-span-1">
+            <Card className="background-green h-full mb-10 lg:mb-0">
 
-      <div className="container mx-auto lg:px-24 items-center flex flex-col lg:flex-row my-20">
-        <div className="p-15 lg:w-1/3 hidden md:block">
-          <MarketIcon />
-        </div>
-        <div className="lg:w-2/3 lg:pl-20 xl:pl-24">
-            <h3 className="text-3xl font-semibold leading-tight text-left">
-              Westside Farmers Market - St. Paul  
-            </h3>
-             <p className="mt-4 text-xl font-light text-left dark-green-text">
-              Saturdays | 8:30am - 12:30pm
-              <br/>
-              June - October 
-              <br/>  
-              63 George St. West
-            </p>
-        </div>
-      </div>
-
-      <div className="container mx-auto lg:px-16 items-center flex flex-col lg:flex-row my-20">
-        <div className="lg:w-2/3 lg:pr-20 xl:pr-24">
-          <h3 className="text-3xl font-semibold leading-tight text-right">
-            Shop Online  
-          </h3>
-            <p className="mt-4 text-lg font-light text-justify dark-green-text">
-              Individuals at high risk for contracting COVID-19 or those who cannot attend the Westside Farmers Market should use our online store to pre-order.  
-              <br/>
-              <Card className="text-sm lg:ml-20 mt-4 p-5" >
-              <h4 className="text-xl">Options: </h4>
-              <ul className="text-justify">
-                <li>Free pickup at the Saturday market. </li> 
-                <li>Free Saturday pickup at the Farm. </li>
-                <li>Saturday afternoon delivery to Twin Cities or Amery, WI area for orders over $30. </li>
-              </ul>
-              </Card>
-              <p className="mt-4 text-lg font-light text-right dark-green-text">
-                Orders must be submitted by Thursday at midnight.
-                <br/> Online ordering is closed Friday - Saturday.
-              </p>
-              <br/>
-              <div className="text-right">
-                <Button className="text-sm shop-button">Our Online Shop</Button>
+              <div className="container mx-auto items-center flex flex-col lg:flex-row">
+                <div className="lg:w-1/3 w-1/2 lg:p-3">
+                  <MarketIcon />
+                </div>
+                <div className="lg:w-2/3 mt-2 lg:mt-0 lg:p-3">
+                  <h4 className="text-lg lg:text-2xl font-semibold leading-tight">
+                    Westside Farmers Market - St. Paul  
+                  </h4>
+                  <p className="m2-4 text-md font-light dark-green-text">
+                    Saturdays | 8:30am - 12:30pm
+                    <br/>
+                    June - October 
+                    <br/>  
+                    63 George St. West
+                  </p>
+                </div>
               </div>
-            </p>
-        </div>
-        <div className="lg:w-1/3 p-15 hidden md:block">
-          <StoreIcon />
-        </div>
-      </div>
+            </Card>
+          </div>
+          <div className="flex-1 px-1 lg:px-3 row-span-1 col-span-1">
+            <Card className="background-green h-full">
 
-      <div className="container mx-auto lg:px-16 items-center flex flex-col lg:flex-row my-20">
-        <div className="lg:w-1/3 hidden md:block p-15">
-          <BasketIcon />
-        </div>
-      <div className="lg:w-2/3 lg:pl-20 xl:pl-24">
-            <h3 className="text-3xl font-semibold leading-tight text-left ">
-              Pack the Pantry Fall CSA   
-            </h3>
-             <p className="mt-4 text-xl font-light text-justify dark-green-text">
-              In response to COVID-19 pandemic, we are exploring a CSA style pre-order of 1-2 large boxes of produce to be distributed in early fall.  They would contain mostly storage crops such as potatoes, carrots, cabbage.  
-              <br/>
-              <br/>Contact andy@firstacrefarm.com 
-            </p>
-        </div>
-      </div>
-     <div className="container mx-auto lg:px-16 items-center flex flex-col lg:flex-row my-20">
-        <div className="lg:w-2/3 lg:pr-20 xl:pr-24">
-            <h3 className="text-3xl font-semibold leading-tight text-right ">
-              Wholesale Inquiries   
-            </h3>
-             <p className="mt-4 text-xl font-light text-right dark-green-text">
-              Contact andy@firstacrefarm.com 
-            </p>
-        </div>
-        <div className="lg:w-1/3 p-15 hidden md:block">
-          <SaleIcon />
+              <div className="container mx-auto items-center flex flex-col lg:flex-row">
+                <div className="lg:w-1/3 w-1/2 lg:p-3">
+                  <SaleIcon />
+                </div>
+                <div className="lg:w-2/3 mt-2 lg:mt-0 lg:p-3">
+                  <h4 className="text-lg lg:text-2xl font-semibold leading-tight">
+                    Wholesale Inquiries   
+                  </h4>
+                  <p className="m2-4 text-md font-light dark-green-text">
+                  Contact andy@firstacrefarm.com 
+                </p>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
-      </Card>
-      </div>
-
     </section>
 
+    <section id="csa">
+      <div className="container mx-auto text-center lg:mt-12 mt-8">
+        <h2 className="text-2xl lg:text-4xl font-semibold dark-green-text">Pack the Pantry Fall CSA Box</h2>
+        <h4 className="text-sm lg:text-lg"> Pickup: October 10 | October 24 </h4>
+        <div className="container mx-auto items-center flex flex-col lg:flex-row ">
+          <div className="w-1/3 container lg:mb-48">
+            <BasketIcon />
+          </div>  
+          <div className="lg:w-2/3 lg:mt-12 text-left mb-20">
+            
+            <div className="pl-5">
+            <h3 className="text-xl lg:text-2xl dark-green-text"> What is CSA?</h3>
+            <p className="mt-3 lg:text-lg md:text-md font-light text-left leading-3">
+
+              CSA (Community Supported Agriculture) is a
+              model where you pre-order pre-assembled
+              boxes of veggies to be delivered to your
+              neighborhood drop site on predetermined
+              dates. We share the risks and rewards of the
+              season. This means if we have a bumper year
+              for carrots (for example), your box may find
+              extra carrots. Alternatively, if it’s a tough year
+              for cabbage (for example), you might not get
+              much or any cabbage. In any case, we’ll
+              provide you two very high quality boxes
+              worth at least $50 each. 
+
+              </p>
+              <br/>
+              <h3 className="text-xl lg:text-2xl mt-2 lg:mt-4 dark-green-text">Box Contents</h3>
+              <p className="mt-3">
+              Broccoli • Salad Greens • Cooking Greens • Radishes • Salad Turnips • Cabbage • Napa Cabbage • Potatoes
+              • Onion • Garlic • Carrots • Beets • Winter Squash
+              <br/>
+              <br/>
+              Check out our &nbsp; 
+              <FlyerDownloadFile className="grey underline"/> for more details.
+              </p>
+            <br/>
+            <br/>
+            
+            <Button className="shop-button"> Fall CSA Sign Up </Button>
+            <br/>
+            <br/>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
   
   </Layout>
 );

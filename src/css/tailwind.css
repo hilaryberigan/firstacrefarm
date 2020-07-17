@@ -11,9 +11,14 @@ a:hover {
 .header-green {
 	color: #4f703E;
 	font-family: 'Sanchez', Arial, Helvetica, sans-serif;
+	line-height: 1.5;
 }
 .sub-header-white {
 	color: white;
+}
+
+.grey {
+	color: #737C6F;
 }
 
 
@@ -44,6 +49,23 @@ a:hover {
 	color: #3B542F;
 	font-family: "Sanchez", Arial, Helvetica, sans-serif;
 }
+.small_line {
+	line-height: 20%;
+}
+
+
+.image_center {
+  width: 100%;
+}
+
+.image_top {
+  top: 100%;
+}
+
+.tight_line {
+	line-height: 1;
+}
+
 
 @tailwind components;
 

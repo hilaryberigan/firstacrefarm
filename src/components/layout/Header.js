@@ -5,17 +5,17 @@ import Button from '../Button';
 
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
-    <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8 header-green logo-header">
+    <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 xl:px-8 px-4 header-green logo-header">
       <div className="flex items-center text-2xl">
         <div className="w-20 mr-3">
           <LogoIcon />
         </div>
-      <div className="header-green px-4">
+      <div className="header-green lg:px-4 px-2 text-2xl text-xl">
         First Acre Farm
       </div>
       </div>
 
-      <div className="text-xl flex mt- sm:mt-0 hidden sm:block">
+      <div className="text-lg xl:text-xl flex sm:mt-0 hidden sm:block">
         <AnchorLink offset="50" className="px-6" href="#about">
           About the Farm
         </AnchorLink>
@@ -25,9 +25,9 @@ const Header = () => (
         <AnchorLink offset="150" className="px-6" href="#where">
           Where to Find Us
         </AnchorLink>
-      </div>
-      <div className="hidden md:block">
-        <Button className="text-sm shop-button ">Our Online Shop</Button>
+        <AnchorLink offset="150" className="px-6" href="#csa">
+          Fall CSA Box
+        </AnchorLink>
       </div>
     </div>
   </header>
